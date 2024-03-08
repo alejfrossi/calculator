@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<style>
+
+    .buttons {
+        display: grid;
+        grid-template-columns:  repeat(4, 200px);
+    }
+
+</style>
+
+<body>
+
+    <div class="calculator">
+        <div class="number-displayer">154545</div>
+        <div class="buttons-container">
+            <div class="buttons">
+                <button class="number-bttn">1</button>
+                <button class="number-bttn">2</button>
+                <button class="number-bttn">3</button>
+                <button class="operation-bttn">C</button>
+                <button class="number-bttn">4</button>
+                <button class="number-bttn">5</button>
+                <button class="number-bttn">6</button>
+                <button class="operation-bttn">+</button>
+                <button class="number-bttn">7</button>
+                <button class="number-bttn">8</button>
+                <button class="number-bttn">9</button>
+                <button class="operation-bttn">-</button>
+                <button class="operation-bttn">x</button>
+                <button class="number-bttn">0</button>
+                <button class="operation-bttn">/</button>
+                <button class="operation-bttn">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+        var numberOne , numberTwo ;
+
+        var operator ;
+
+        var displayValue ;
+
+        const bttns = document.querySelectorAll("bttn");
+
+        var lastBttn ;
+
+        bttns.forEach( bttn => bttn.addEventListener( 'click' , () => {
+
+            if ( lastBttn === null ) {
+
+                if ( bttn.className === "operation-bttn" ) {
+                    return alert('First Number must be entered');
+                }
+
+            }
+
+        }));
+
+        function displayValue () {
+
+        }
+
+        function operate ( numberOne , numerTwo , operator ) {
+
+        }
+
+    </script>
+
+</body>
+
+</html>
