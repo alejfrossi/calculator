@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 1440px;
+    height: 1024px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #131313;
+}
+
+.calculator {
+    width: 412.594px;
+    height: 685.345px;
+    margin: 0;
+    flex-shrink: 0; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 20px;
+    background: #3E3E3E;      
+}
+
+.display {
+    width: 359px;
+    height: 142px;
+    margin: 0;
+    padding: 10px;
+    flex-shrink: 0; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+    border-radius: 10px;
+    background: #999;
+}
+
+#last-operation {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #3E3E3E;
+    line-height: normal;
+}
+
+#input {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: #D9D9D9;
+    line-height: normal;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 73px);
+    gap: 22px;
+}
+
+button {
+    width: 73px;
+    height: 73px;
+    flex-shrink: 0;
+
+    border: none;
+    border-radius: 50%;
+    background: #D9D9D9;
+
+    color: #131313;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.executives {
+    margin: 0;
+    padding: 27px 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.operator {
+    background: #9A54AB;
+    color: #FFF;
+}
+
+#clear {
+    width: 169px;
+    height: 42px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    background: #D76666;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: normal;
+}
+
+#backspace {
+    width: 168px;
+    height: 42px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    background: #6888B9;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: normal;
+}
