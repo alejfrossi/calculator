@@ -4,6 +4,12 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     width: 1440px;
     height: 1024px;
